@@ -1,0 +1,17 @@
+CI  industry 44-45, border ca, LAM=15.0, perms=200, grid=41
+
+[shortfall x 1] restriction window 2015Q1-2022Q1
+  beta = +2.66   p_RI = 0.035   95% CI [+0.44, +4.87]
+  implied employment effect at the mean restriction-period shortfall (-0.88): -2.34, CI [-4.30, -0.39] log points x100
+
+[shortfall x 1] full sample 2015Q1-2026Q1
+  beta = +4.49   p_RI = 0.020   95% CI [+1.19, +7.79]
+  implied employment effect at the mean restriction-period shortfall (-0.88): -3.96, CI [-6.87, -1.05] log points x100
+
+[shortfall x dose (per 1 SD)] restriction window 2015Q1-2022Q1
+  beta = +0.82   p_RI = 0.030   95% CI [+0.10, +1.54]
+  implied employment effect at the mean restriction-period shortfall (-0.88): -0.72, CI [-1.36, -0.09] log points x100
+
+[shortfall x dose (per 1 SD)] full sample 2015Q1-2026Q1
+  beta = +1.33   p_RI = 0.010   95% CI [+0.33, +2.34]
+  implied employment effect at the mean restriction-period shortfall (-0.88): -1.18, CI [-2.06, -0.29] log points x100

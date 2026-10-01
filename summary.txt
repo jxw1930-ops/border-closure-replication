@@ -1,0 +1,21 @@
+Land ports with passenger traffic in 2019: 111 (27 Mexico, 84 Canada)
+
+County groups: mx=24, ca=75, far=2791, excluded (between 50 and 150 mi)=331
+Sanity check (miles):
+  San Diego CA   Mexico    32.1  Canada  1099.1  group=mx
+  El Paso TX     Mexico    12.3  Canada  1190.8  group=mx
+  Pima AZ        Mexico    46.7  Canada  1165.7  group=mx
+  Whatcom WA     Mexico  1153.4  Canada    22.4  group=ca
+  Erie NY        Mexico  1538.5  Canada    27.5  group=ca
+  Wayne MI       Mexico  1329.7  Canada    11.4  group=ca
+  Cook IL        Mexico  1142.0  Canada   237.5  group=far
+  Franklin OH    Mexico  1252.2  Canada   163.2  group=far
+
+Retail Trade (44-45)  suppressed share: mx=0%, ca=2%, far=2%
+  balanced counties: mx=23, ca=70, far=2595
+
+Accommodation and Food Services (72)  suppressed share: mx=16%, ca=17%, far=26%
+  balanced counties: mx=15, ca=51, far=1437
+
+Manufacturing (comparison) (31-33)  suppressed share: mx=18%, ca=18%, far=11%
+  balanced counties: mx=14, ca=45, far=2003

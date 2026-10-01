@@ -1,0 +1,21 @@
+DETRENDED Industry 31-33, border ca, LAM=15.0, perms=300, treated=45, control=1996
+  mean flow shortfall among treated, pre  : +0.00
+  mean flow shortfall among treated, restr: -0.89
+  mean flow shortfall among treated, post : -0.25
+  mean flow shortfall among treated, y25  : -0.31
+
+== shortfall x 1 (every treated county equally) ==
+  coefficient = change in employment (log points x100) per 100% change in visitor flow
+  pooled  beta=  +1.72  p_RI=0.797   -> a 50% shortfall implies -0.86
+  pre     beta=  -2.14  p_RI=0.883   -> a 50% shortfall implies +1.07
+  restr   beta=  +1.35  p_RI=0.773   -> a 50% shortfall implies -0.68
+  post    beta=  +6.62  p_RI=0.690   -> a 50% shortfall implies -3.31
+  y25     beta=  -3.13  p_RI=0.927   -> a 50% shortfall implies +1.56
+
+== shortfall x dose (1 SD of log(1+visitors/retail worker)) ==
+  coefficient = change in employment (log points x100) per 100% change in visitor flow
+  pooled  beta=  +0.32  p_RI=0.857   -> a 50% shortfall implies -0.16
+  pre     beta=  -2.96  p_RI=0.523   -> a 50% shortfall implies +1.48
+  restr   beta=  +0.25  p_RI=0.753   -> a 50% shortfall implies -0.12
+  post    beta=  +1.77  p_RI=0.723   -> a 50% shortfall implies -0.88
+  y25     beta=  -0.67  p_RI=0.913   -> a 50% shortfall implies +0.33

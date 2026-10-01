@@ -1,0 +1,56 @@
+Alaska excluded
+distance decay LAM = 15.0 mi
+Top exposure treated counties:
+area_fips              NAME USPS   expo
+    38067    Pembina County   ND 1081.7
+    27069    Kittson County   MN  804.1
+    53073    Whatcom County   WA  758.2
+    26033   Chippewa County   MI  696.3
+    23029 Washington County   ME  639.5
+    16021   Boundary County   ID  560.4
+    50011   Franklin County   VT  394.4
+    36019    Clinton County   NY  378.4
+    27135     Roseau County   MN  376.5
+    50019    Orleans County   VT  361.9
+    23003  Aroostook County   ME  361.3
+    53057     Skagit County   WA  322.5
+RUCC file: Ruralurbancontinuumcodes2023.csv, 3233 counties
+Industry 31-33, permutations 300, NEAR=50 mi
+
+== baseline: state x quarter FE ==  treated 45, control 1996
+  pre=-0.86(p=0.77)  restr=-1.02(p=0.60)  post=-1.33(p=0.66)  y25=+0.51(p=0.90)
+  V-test: restr=-1.02, after=-1.90, w=0.545, dip=+0.02, p_RI=0.980
+
+== + RUCC x quarter FE ==  treated 45, control 1996
+  pre=-0.87(p=0.72)  restr=-0.98(p=0.62)  post=-0.92(p=0.78)  y25=+1.13(p=0.80)
+  V-test: restr=-0.98, after=-1.52, w=0.545, dip=-0.15, p_RI=0.910
+
+== drop New York ==  treated 35, control 1978
+  pre=-1.08(p=0.76)  restr=-1.79(p=0.50)  post=-1.03(p=0.80)  y25=+1.51(p=0.75)
+  V-test: restr=-1.79, after=-1.70, w=0.545, dip=-0.86, p_RI=0.620
+
+== drop Michigan ==  treated 35, control 1980
+  pre=-1.68(p=0.65)  restr=+0.35(p=0.88)  post=-0.11(p=0.97)  y25=+2.79(p=0.63)
+  V-test: restr=+0.35, after=-0.78, w=0.545, dip=+0.78, p_RI=0.660
+
+== drop Washington ==  treated 38, control 1990
+  pre=-2.34(p=0.43)  restr=-0.85(p=0.71)  post=-2.73(p=0.47)  y25=-1.98(p=0.69)
+  V-test: restr=-0.85, after=-2.89, w=0.545, dip=+0.72, p_RI=0.577
+
+== drop Alaska ==  treated 45, control 1996
+  pre=-0.86(p=0.75)  restr=-1.02(p=0.64)  post=-1.33(p=0.70)  y25=+0.51(p=0.89)
+  V-test: restr=-1.02, after=-1.90, w=0.545, dip=+0.02, p_RI=0.983
+
+Exposure among treated (2019 visitors per retail worker): median 114.7, max 1081.7
+
+== continuous dose (per 1 SD of log(1+visitors/retail worker)) ==  treated 45, control 1996
+  pre=-0.41(p=0.70)  restr=-0.03(p=0.96)  post=-0.10(p=0.91)  y25=+0.57(p=0.66)
+  V-test: restr=-0.03, after=-0.30, w=0.545, dip=+0.13, p_RI=0.730
+
+== treated = high exposure only ==  treated 22, control 1996
+  pre=-2.19(p=0.64)  restr=+0.58(p=0.86)  post=+1.45(p=0.72)  y25=+5.09(p=0.46)
+  V-test: restr=+0.58, after=+0.40, w=0.545, dip=+0.36, p_RI=0.837
+
+== treated = low exposure only ==  treated 23, control 1996
+  pre=+0.92(p=0.71)  restr=-2.79(p=0.20)  post=-3.90(p=0.29)  y25=-3.33(p=0.50)
+  V-test: restr=-2.79, after=-4.17, w=0.545, dip=-0.52, p_RI=0.693

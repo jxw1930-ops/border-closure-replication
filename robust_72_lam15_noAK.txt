@@ -1,0 +1,56 @@
+Alaska excluded
+distance decay LAM = 15.0 mi
+Top exposure treated counties:
+area_fips                     NAME USPS   expo
+    30101             Toole County   MT 1444.6
+    27071       Koochiching County   MN 1180.8
+    27031              Cook County   MN 1129.8
+    53055          San Juan County   WA 1109.8
+    27077 Lake of the Woods County   MN  935.2
+    53073           Whatcom County   WA  758.2
+    26033          Chippewa County   MI  696.3
+    36019           Clinton County   NY  378.4
+    27135            Roseau County   MN  376.5
+    50019           Orleans County   VT  361.9
+    53057            Skagit County   WA  322.5
+    36089      St. Lawrence County   NY  322.2
+RUCC file: Ruralurbancontinuumcodes2023.csv, 3233 counties
+Industry 72, permutations 300, NEAR=50 mi
+
+== baseline: state x quarter FE ==  treated 48, control 1430
+  pre=+1.46(p=0.27)  restr=+0.00(p=1.00)  post=-4.34(p=0.01)  y25=-6.33(p=0.00)
+  V-test: restr=+0.00, after=-3.64, w=0.545, dip=+1.99, p_RI=0.160
+
+== + RUCC x quarter FE ==  treated 48, control 1430
+  pre=+1.48(p=0.29)  restr=-0.19(p=0.89)  post=-3.86(p=0.02)  y25=-5.64(p=0.01)
+  V-test: restr=-0.19, after=-3.15, w=0.545, dip=+1.53, p_RI=0.257
+
+== drop New York ==  treated 37, control 1411
+  pre=-0.40(p=0.74)  restr=-2.78(p=0.17)  post=-4.63(p=0.06)  y25=-6.59(p=0.02)
+  V-test: restr=-2.78, after=-4.07, w=0.545, dip=-0.56, p_RI=0.650
+
+== drop Michigan ==  treated 38, control 1417
+  pre=+1.78(p=0.29)  restr=+0.56(p=0.83)  post=-4.89(p=0.03)  y25=-6.55(p=0.03)
+  V-test: restr=+0.56, after=-4.21, w=0.545, dip=+2.85, p_RI=0.080
+
+== drop Washington ==  treated 38, control 1423
+  pre=+1.42(p=0.39)  restr=+1.50(p=0.47)  post=-3.17(p=0.11)  y25=-5.60(p=0.03)
+  V-test: restr=+1.50, after=-2.34, w=0.545, dip=+2.77, p_RI=0.067
+
+== drop Alaska ==  treated 48, control 1430
+  pre=+1.46(p=0.31)  restr=+0.00(p=1.00)  post=-4.34(p=0.01)  y25=-6.33(p=0.00)
+  V-test: restr=+0.00, after=-3.64, w=0.545, dip=+1.99, p_RI=0.123
+
+Exposure among treated (2019 visitors per retail worker): median 97.5, max 1444.6
+
+== continuous dose (per 1 SD of log(1+visitors/retail worker)) ==  treated 48, control 1430
+  pre=+0.45(p=0.29)  restr=-0.13(p=0.80)  post=-1.56(p=0.01)  y25=-2.30(p=0.00)
+  V-test: restr=-0.13, after=-1.33, w=0.545, dip=+0.60, p_RI=0.200
+
+== treated = high exposure only ==  treated 24, control 1430
+  pre=+2.17(p=0.29)  restr=+0.42(p=0.84)  post=-5.53(p=0.03)  y25=-8.37(p=0.01)
+  V-test: restr=+0.42, after=-4.67, w=0.545, dip=+2.97, p_RI=0.100
+
+== treated = low exposure only ==  treated 24, control 1430
+  pre=+1.24(p=0.47)  restr=-0.44(p=0.82)  post=-3.43(p=0.13)  y25=-4.60(p=0.10)
+  V-test: restr=-0.44, after=-2.92, w=0.545, dip=+1.15, p_RI=0.503
